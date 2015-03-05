@@ -41,6 +41,7 @@ if (array_key_exists('days', $_REQUEST) && ($_REQUEST['days'] !== '')) {
 <!DOCTYPE HTML>
 <html>
 <body>
+<p><a href="search.php">search</a></p>
 <form method="post">
 username / password <input type="input" name="username" />
 <input type="password" name="password" /><br />
