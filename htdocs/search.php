@@ -48,7 +48,7 @@ if (array_key_exists('search', $_REQUEST) && ($_REQUEST['search'] !== '')) {
 <body>
 <p><a href="index.php">browse</a></p>
 <form method="post">
-username / password <input type="input" name="username" />
+<?= isset($username) ? 'modify ' : '' ?>username &amp; password <input type="input" name="username" />
 <input type="password" name="password" /><br />
 search <input type="input" name="search" /><br />
 days <input type="days" name="days" /><br />

@@ -43,7 +43,7 @@ if (array_key_exists('days', $_REQUEST) && ($_REQUEST['days'] !== '')) {
 <body>
 <p><a href="search.php">search</a></p>
 <form method="post">
-username / password <input type="input" name="username" />
+<?= isset($username) ? 'modify ' : '' ?>username &amp; password <input type="input" name="username" />
 <input type="password" name="password" /><br />
 days <input type="days" name="days" /><br />
 <input type="submit" name="ok" value="&raquo;"/>
