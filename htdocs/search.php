@@ -51,7 +51,7 @@ if (array_key_exists('search', $_REQUEST) && ($_REQUEST['search'] !== '')) {
 <?= isset($username) ? 'modify ' : '' ?>username &amp; password <input type="input" name="username" />
 <input type="password" name="password" /><br />
 search <input type="input" name="search" /><br />
-days <input type="days" name="days" /><br />
+days <input type="days" name="days" /> (example: dd/mm/yyyy - dd/mm/yyyy)<br />
 <input type="submit" name="ok" value="&raquo;"/>
 </form>
 
